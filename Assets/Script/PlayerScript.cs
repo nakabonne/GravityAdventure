@@ -4,11 +4,13 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
 
 	//前進するスピード
-	float moveSpeed = 40.0f;
+	float moveSpeed = 60.0f;
 	//横移動するスピード
 	float sideSpeed = 5.0f;
 	//現在の重力方向
 	bool GravitydirectionIsDown;
+	//移動方向
+	public Vector3 dir = Vector3.zero;
 
 	// Use this for initialization
 	void Start () {
@@ -29,14 +31,15 @@ public class PlayerScript : MonoBehaviour {
 	//移動を管理
 	void Move()
 	{
-		var dir = Vector3.zero;
+		//var dir = Vector3.zero;
 		dir.x = Input.acceleration.x;
 		//縦の移動
-		dir.z += Time.deltaTime * moveSpeed;
+		dir.z = Time.deltaTime * moveSpeed;
 
-		if(dir.sqrMagnitude > 1){
-			dir.Normalize();
-		}
+		//↓Z軸方向への移動スピードがいじれなかったため、正規化は一旦コメントアウト
+//		if(dir.sqrMagnitude > 1){
+//			dir.Normalize();
+//		}
 
 		dir *= Time.deltaTime;
 
@@ -47,10 +50,10 @@ public class PlayerScript : MonoBehaviour {
 	void GravitySwitch()
 	{
 		if (GravitydirectionIsDown) {
-			Physics.gravity = new Vector3 (0, 9.7f, 0);
+			Physics.gravity = new Vector3 (0, 9.81f, 0);
 			GravitydirectionIsDown = false;
 		}else{
-			Physics.gravity = new Vector3 (0,-9.7f,0);
+			Physics.gravity = new Vector3 (0,-9.81f,0);
 			GravitydirectionIsDown = true;
 		}
 
