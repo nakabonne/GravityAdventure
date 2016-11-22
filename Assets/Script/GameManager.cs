@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour {
 	//これがfalseである限りゲームは動かない
 	public static bool isPlaying;
 
+	//デバッグかどうか
+	public static bool isDebug;
+
 	public GameObject gameStartButton;
 	// Use this for initialization
 	void Start () {

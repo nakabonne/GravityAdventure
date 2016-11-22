@@ -1,0 +1,17 @@
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/UnityEngine.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/UnityEditor.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Mono.Cecil.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Unity.DataContract.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/NakaoRyo/Desktop/UnityProject/BanYuInryoku/Temp/bin/Debug/Mono.Cecil.Mdb.dll
