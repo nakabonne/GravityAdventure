@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 
 	//重力を表すテキスト
 	public Text gravityText;
+
 	// Use this for initialization
 	void Start () {
 		isPlaying = false;
