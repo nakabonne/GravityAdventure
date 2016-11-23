@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
+	AllGameManager allGameManager;
+	GameObject allGameManagerObj;
+
 	//このステージのスコア
 	public float score = 0;
-	//スコアを表すテキスト
-	public Text ScoreLabel;
 
-	//シングルトン作る
-	void Awake()
+	void Start()
 	{
-		
+		allGameManagerObj = GameObject.Find ("AllGameManager");
+		allGameManager = allGameManagerObj.GetComponent<AllGameManager> ();
+		score = 0;
 	}
-
 
 	void Update () {
 		if (!GameManager.isPlaying) return;
-		Displaying ();
-		TimeAdd ();
+		if (SceneManager.GetActiveScene ().name == "Stage1") {
+			TimeAdd ();
+		}
 	
 	}
 
@@ -28,9 +31,10 @@ public class ScoreManager : MonoBehaviour {
 	{
 		score += Time.deltaTime;
 	}
-	//スコアを表示
-	void Displaying()
+	//スコアをAllGameManagerに送る
+	public void SendScore()
 	{
-		ScoreLabel.text = score.ToString ("f1");
+		allGameManager.thisTimeScore = score;
 	}
+
 }

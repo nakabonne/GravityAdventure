@@ -10,7 +10,7 @@ public class StageBlockGenerator : MonoBehaviour {
 	//プレイヤー
 	public GameObject player;
 	//生成ペース
-	float generatePace = 0.065f;
+	float generatePace = 0.05f;
 	//生成タイミングを決めるカウント
 	float count = 0;
 	//生成するブロックのz座標
@@ -22,7 +22,7 @@ public class StageBlockGenerator : MonoBehaviour {
 
 	void Start()
 	{
-		randomCount = Random.Range (3.0f, 10.0f);
+		randomCount = Random.Range (1.0f, 6.0f);
 	}
 	
 	void Update () {
@@ -54,8 +54,8 @@ public class StageBlockGenerator : MonoBehaviour {
 		//落とし穴を作成
 		if (HoleFrequency >= randomCount) {
 			HoleFrequency = 0; 
-			randomCount = Random.Range (4.0f, 10.0f);
-			return Random.Range (5.0f, 15.0f);
+			randomCount = Random.Range (1.0f, 6.0f);
+			return Random.Range (10.0f, 20.0f);
 		} else {	
 			return 1.0f;
 		}

@@ -45,9 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\AllGameManager.cs" />
      <Compile Include="Assets\Script\CameraScript.cs" />
+     <Compile Include="Assets\Script\DethZone.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\PlayerScript.cs" />
+     <Compile Include="Assets\Script\ResultGameManager.cs" />
      <Compile Include="Assets\Script\ScoreManager.cs" />
      <Compile Include="Assets\Script\StageBlock.cs" />
      <Compile Include="Assets\Script\StageBlockGenerator.cs" />
