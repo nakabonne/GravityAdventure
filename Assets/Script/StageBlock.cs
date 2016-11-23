@@ -3,15 +3,20 @@ using System.Collections;
 
 public class StageBlock : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
-	
+		Invoke ("Hide", 30.0f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	//ブロックを非表示にする
+	void Hide()
+	{
+		//もともと置いてあったブロックの場合は実行されない
+		if (isDefaultBlock()) return;
+		gameObject.SetActive (false);
 	}
-
+	//このオブジェクトがデフォルトのブロックどうかを返す
+	bool isDefaultBlock()
+	{
+		return gameObject.tag == "DefaultBlock";
+	}
 
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
 
 	//前進するスピード
-	float moveSpeed = 50.0f;
+	float moveSpeed = 55.0f;
 	//横移動するスピード
 	float sideSpeed = 5.0f;
 	//現在の重力方向
@@ -52,10 +52,10 @@ public class PlayerScript : MonoBehaviour {
 	void GravitySwitch()
 	{
 		if (GravitydirectionIsDown) {
-			Physics.gravity = new Vector3 (0, 9.81f, 0);
+			Physics.gravity = new Vector3 (0, 20.0f, 0);
 			GravitydirectionIsDown = false;
 		}else{
-			Physics.gravity = new Vector3 (0,-9.81f,0);
+			Physics.gravity = new Vector3 (0,-20.0f,0);
 			GravitydirectionIsDown = true;
 		}
 

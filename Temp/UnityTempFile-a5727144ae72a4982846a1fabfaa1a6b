@@ -96,6 +96,8 @@
 'Assets/Script/CameraScript.cs'
 'Assets/Script/GameManager.cs'
 'Assets/Script/PlayerScript.cs'
+'Assets/Script/StageBlock.cs'
+'Assets/Script/StageBlockGenerator.cs'
 'Assets/Script/TitleUIScript.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
