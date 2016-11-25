@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ResultGameManager : MonoBehaviour {
 	//今回のスコアを表示するテキスト
 	public Text thisScoreLabel;
+	//ハイスコアを表示するテキスト
+	public Text highScoreLabel;
 
 	AllGameManager allgamemanager;
 	GameObject allgamemanagerobj;
@@ -14,6 +16,8 @@ public class ResultGameManager : MonoBehaviour {
 	void Start () {
 		allgamemanagerobj = GameObject.Find ("AllGameManager");
 		allgamemanager = allgamemanagerobj.GetComponent<AllGameManager> ();
+		//ハイスコアかどうかを審査
+		allgamemanager.SetScore ();
 	}
 	
 	// Update is called once per frame
@@ -26,9 +30,12 @@ public class ResultGameManager : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("Stage1");
 	}
-	//今回のスコアを表示する
+	//今回のスコア情報を表示するメソッド
 	void DisplayThisScore()
 	{
-		thisScoreLabel.text = allgamemanager.thisTimeScore.ToString("f1");
+		//今回のスコアを表示
+		thisScoreLabel.text = "今回のスコア" + allgamemanager.thisTimeScore.ToString("f1");
+		//ハイスコアを表示
+		highScoreLabel.text = "ハイスコア" + allgamemanager.highScore.ToString ("f1");
 	}
 }
